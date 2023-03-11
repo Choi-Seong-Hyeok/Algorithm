@@ -6,10 +6,10 @@ riceCakes = list(map(int,sys.stdin.readline().split(sep=' ',maxsplit=n)))
 
 riceCakes.sort()
 
-start,end = 0,max(riceCakes)
+start , end = 0 , max(riceCakes)
 
 result = 0
-while(start<=end):
+while start <= end:
     total = 0
     mid = (start+end)//2
     for riceCake in riceCakes:
@@ -17,7 +17,7 @@ while(start<=end):
             total += riceCake - mid
 
     if total < m:
-        end = mid -1
+        end = mid - 1
     else:
         result = mid
         start = mid + 1

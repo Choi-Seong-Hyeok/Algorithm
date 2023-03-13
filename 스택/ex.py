@@ -1,5 +1,2 @@
-stack = 4
+from collections import deque
 
-
-for i in range(stack-2,-1,-1):
-    print(i)

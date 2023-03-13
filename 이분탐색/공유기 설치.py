@@ -1,5 +1,5 @@
 import sys
-# 채점하면 틀리긴함
+
 n, c = map(int, sys.stdin.readline().split())
 houses = []
 for _ in range(n):

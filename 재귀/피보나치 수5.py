@@ -1,13 +1,18 @@
 import sys
+input = sys.stdin.readline
 
-
-def fibo(val):
-    if val <= 1:
+def fibo(n):
+    if n == 0:
+        return 0
+    elif n <= 2:
         return 1
     else:
-        return fibo(val-1) + fibo(val-2)
+        return fibo(n-1) + fibo(n-2)
 
 
 
-n = int(input())
-print(fibo(n))
+
+
+
+N = int(input())
+print(fibo(N))

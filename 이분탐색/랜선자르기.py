@@ -22,9 +22,9 @@ while start <= end:
         if lan >= mid:
             cnt += lan // mid
     if cnt >= N:
+        result = mid
         start = mid + 1
     else:
-        # result = mid
         end = mid - 1
 
 

@@ -1,32 +1,20 @@
 import sys
-from collections import deque
+read = sys.stdin.readline
 
+T = int(read())
 
-def bfs(graph,start,visited):
-    visited[start] = True
-    queue = deque([start])
-    while queue:
-        v = queue.popleft()
-        print(v,end=' ')
-        for i in graph[v]:
-            if not visited[i]:
-                queue.append(i)
-                visited[i] = True
+while T:
+    N = int(read())
+    coin = list(map(int, read().split()))
+    M = int(read())
+    d = [0 for _ in range(M+1)]
+    d[0] = 1
 
+    #핵심 코드 
+    for i in range(N):
+        for j in range(coin[i], M+1):
+            # 자기 값을 빼서 ++
+            d[j] += d[j-coin[i]]
 
-
-
-graph = [
-    [],
-    [2,3,8],
-    [1,7],
-    [1,4,5],
-    [3,5],
-    [3,4],
-    [7],
-    [2,6,8],
-    [1,7]
-]
-visited =[False] * 9
-
-bfs(graph,1,visited)
+    print(d[M])
+    T -= 1

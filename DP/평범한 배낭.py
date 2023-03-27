@@ -22,7 +22,6 @@ for i in range(1, k+1):
         if j >= nw :
             dp[i][j] = max(dp[i-1][j], dp[i-1][j-nw] + nv)
         else :
-
             dp[i][j] = dp[i-1][j]
 print(dp[-1][-1])
 

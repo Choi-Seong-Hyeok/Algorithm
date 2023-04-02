@@ -3,6 +3,7 @@ input = sys.stdin.readline
 
 n,m = map(int,input().rstrip().split())
 arr = []
+
 for _ in range(n):
     arr.append(int(input()))
 

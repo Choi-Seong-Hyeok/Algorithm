@@ -48,9 +48,6 @@ def merge(l,r):
 
 
 
-
-
-
 n,k=map(int,input().split())
 A = list(map(int,input().split()))
 ans = []

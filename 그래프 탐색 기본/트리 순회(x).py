@@ -3,9 +3,9 @@ input = sys.stdin.readline
 '''
 트리순회 : inorder, preorde, postorder 
 해야할것들 
-1. 각 노드의 root , left , right를 나타내야함 --> class 사용 
-2. 순회들의 함수를 만들어줘야함 함수 안에서 표현을 잘해야함. --> 객체를 참조하는 것인지 당시 루트값을 나타내고 싶은것인지.
-3. dictionary 형태로 class를 넣어줘야함.
+    1. 각 노드의 root , left , right를 나타내야함 --> class 사용 
+    2. 순회들의 함수를 만들어줘야함 함수 안에서 표현을 잘해야함. --> 객체를 참조하는 것인지 당시 루트값을 나타내고 싶은것인지.
+    3. dictionary 형태로 class를 넣어줘야함.
 '''
 n = int(input())
 node = [int(input().split()) for _ in range(n)]

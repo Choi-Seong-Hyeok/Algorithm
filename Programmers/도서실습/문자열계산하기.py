@@ -1,4 +1,3 @@
-
 def solution(my_string):
     my_string = my_string.split()
     print('my_string : ',my_string)

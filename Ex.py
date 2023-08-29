@@ -1,7 +1,17 @@
-def fibo(n):
-   if n <=2:
-      return 1
-   return fibo(n-1) + fibo(n-2)
+array = [0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 
+count = 0
+counts_of_zeros = []
 
-print(fibo(4))
+for num in array:
+    if num == 0:
+        count += 1
+    else:
+        if count > 0:
+            counts_of_zeros.append(count)
+            count = 0
+
+if count > 0:
+    counts_of_zeros.append(count)
+
+print(counts_of_zeros)

@@ -1,3 +1,4 @@
+
 short_men = [int(input()) for _ in range(9)]
 seven_short_temp = []  # 7명을 뽑아 합을 조사할 새로운 리스트 선언
 

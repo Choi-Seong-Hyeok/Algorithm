@@ -1,5 +1,3 @@
-s = "aca"
+aList = [7, 8, 10, 13, 19, 20, 23]
 
-for i in range(len(s)):
-    s = s[-1] + s[:-1]
-    print(s)
+print(sum(aList))

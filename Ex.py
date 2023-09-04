@@ -1,3 +1,3 @@
-aList = []
 
-print(sum(aList))
+print(80/7)
+print(139/10)

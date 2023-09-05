@@ -1,3 +1,3 @@
-
-print(80/7)
-print(139/10)
+N=6
+for i in range(1,N+1):
+    print(i)

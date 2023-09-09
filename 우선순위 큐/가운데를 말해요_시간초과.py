@@ -8,6 +8,7 @@ heap = []
 sub_heap = []
 for i in range(n):
     val = int(input())
+    a = int(input())
     if i == 0:
         heapq.heappush(heap, val)
         print(val)

@@ -1,6 +1,6 @@
 '''
-1.철자 중복시 한 번만 출력
-2.알파벳 순서대로
+    1.철자 중복시 한 번만 출력
+    2.알파벳 순서대로
 '''
 from itertools import permutations
 import sys

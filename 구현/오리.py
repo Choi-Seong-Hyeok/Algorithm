@@ -1,7 +1,6 @@
 quack = "quack"
 quack = list(quack)
 # 0 1 2 3 4
-
 '''
     울음 소리는 연속될 필요는 X But 순서는 "quack"
     1. q -> u -> a -> c -> k ( cnt += 1 )

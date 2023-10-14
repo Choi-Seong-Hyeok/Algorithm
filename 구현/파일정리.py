@@ -12,7 +12,6 @@ for file in files:
     extension = file.split('.')[-1]
     extension_count[extension] = extension_count.get(extension, 0) + 1
 
-
 # 확장자 정렬
 sorted_extensions = sorted(extension_count.keys())
 

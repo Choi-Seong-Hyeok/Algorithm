@@ -11,7 +11,7 @@ m = int(input())
 graph = [[]for _ in range(n+1)]
 visited = [False]*(n+1)
 print(visited)
-# https://www.youtube.com/watch?v=j1qZDHllov8
+
 for _ in range(m):
     parent,child = map(int,input().split())
     graph[child].append(parent)
